@@ -1,0 +1,112 @@
+148520:C 20 Apr 2026 13:50:19.106 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+148520:C 20 Apr 2026 13:50:19.107 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=148520, just started
+148520:C 20 Apr 2026 13:50:19.107 # Configuration loaded
+148520:M 20 Apr 2026 13:50:19.107 * monotonic clock: POSIX clock_gettime
+148520:M 20 Apr 2026 13:50:19.108 * No cluster configuration found, I'm e2f52342a2d503f8f12fb2b88fcba665d5fce8c7
+148520:M 20 Apr 2026 13:50:19.114 * Running mode=cluster, port=7005.
+148520:M 20 Apr 2026 13:50:19.114 # Server initialized
+148520:M 20 Apr 2026 13:50:19.114 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+148520:M 20 Apr 2026 13:50:19.117 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+148520:M 20 Apr 2026 13:50:19.121 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+148520:M 20 Apr 2026 13:50:19.121 * Ready to accept connections
+148520:M 20 Apr 2026 13:50:55.166 # configEpoch set to 6 via CLUSTER SET-CONFIG-EPOCH
+148520:M 20 Apr 2026 13:50:55.358 # IP address for this node updated to 127.0.0.1
+148520:S 20 Apr 2026 13:50:58.173 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+148520:S 20 Apr 2026 13:50:58.173 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:50:58.173 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:50:58.173 # Cluster state changed: ok
+148520:S 20 Apr 2026 13:50:58.173 * Non blocking connect for SYNC fired the event.
+148520:S 20 Apr 2026 13:50:58.173 * Master replied to PING, replication can continue...
+148520:S 20 Apr 2026 13:50:58.174 * Trying a partial resynchronization (request 1adb31b7db60c255a0169433967b5c3305eaf053:1).
+148520:S 20 Apr 2026 13:51:03.511 * Full resync from master: 96c167aefd1a36c472d9c3d2ecace0af53ff9c2a:14
+148520:S 20 Apr 2026 13:51:03.513 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+148520:S 20 Apr 2026 13:51:03.514 * Discarding previously cached master state.
+148520:S 20 Apr 2026 13:51:03.514 * MASTER <-> REPLICA sync: Flushing old data
+148520:S 20 Apr 2026 13:51:03.514 * MASTER <-> REPLICA sync: Loading DB in memory
+148520:S 20 Apr 2026 13:51:03.518 * Loading RDB produced by version 7.0.15
+148520:S 20 Apr 2026 13:51:03.518 * RDB age 0 seconds
+148520:S 20 Apr 2026 13:51:03.518 * RDB memory usage when created 1.77 Mb
+148520:S 20 Apr 2026 13:51:03.518 * Done loading RDB, keys loaded: 0, keys expired: 0.
+148520:S 20 Apr 2026 13:51:03.518 * MASTER <-> REPLICA sync: Finished with success
+148520:S 20 Apr 2026 13:51:03.518 * Creating AOF incr file temp-appendonly.aof.incr on background rewrite
+148520:S 20 Apr 2026 13:51:03.519 * Background append only file rewriting started by pid 149081
+149081:C 20 Apr 2026 13:51:03.521 * Successfully created the temporary AOF base file temp-rewriteaof-bg-149081.aof
+149081:C 20 Apr 2026 13:51:03.522 * Fork CoW for AOF rewrite: current 0 MB, peak 0 MB, average 0 MB
+148520:S 20 Apr 2026 13:51:03.534 * Background AOF rewrite terminated with success
+148520:S 20 Apr 2026 13:51:03.534 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-149081.aof into appendonly.aof.2.base.rdb
+148520:S 20 Apr 2026 13:51:03.534 * Successfully renamed the temporary AOF incr file temp-appendonly.aof.incr into appendonly.aof.2.incr.aof
+148520:S 20 Apr 2026 13:51:03.538 * Removing the history file appendonly.aof.1.incr.aof in the background
+148520:S 20 Apr 2026 13:51:03.538 * Removing the history file appendonly.aof.1.base.rdb in the background
+148520:S 20 Apr 2026 13:51:03.542 * Background AOF rewrite finished successfully
+148520:S 20 Apr 2026 13:54:43.407 # Connection with master lost.
+148520:S 20 Apr 2026 13:54:43.407 * Caching the disconnected master state.
+148520:S 20 Apr 2026 13:54:43.407 * Reconnecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:43.408 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:43.408 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:43.656 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:43.656 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:43.656 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:44.667 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:44.667 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:44.668 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:45.682 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:45.682 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:45.683 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:46.698 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:46.698 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:46.698 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:47.712 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:47.713 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:47.713 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:48.725 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:48.725 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:48.726 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:49.743 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:49.743 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:49.743 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:50.761 * Connecting to MASTER 127.0.0.1:7000
+148520:S 20 Apr 2026 13:54:50.761 * MASTER <-> REPLICA sync started
+148520:S 20 Apr 2026 13:54:50.761 # Error condition on socket for SYNC: Connection refused
+148520:S 20 Apr 2026 13:54:50.869 * FAIL message received from e7918a5179bf0a862910ab05076e2a90343a91c9 about 6cfebc6a6b5e4a45c96627f2546e59aba9838d7c
+148520:S 20 Apr 2026 13:54:50.869 # Cluster state changed: fail
+148520:S 20 Apr 2026 13:54:50.963 # Start of election delayed for 530 milliseconds (rank #0, offset 322).
+148520:S 20 Apr 2026 13:54:51.568 # Starting a failover election for epoch 7.
+148520:S 20 Apr 2026 13:54:51.577 # Failover election won: I'm the new master.
+148520:S 20 Apr 2026 13:54:51.577 # configEpoch set to 7 after successful failover
+148520:M 20 Apr 2026 13:54:51.577 * Discarding previously cached master state.
+148520:M 20 Apr 2026 13:54:51.578 # Setting secondary replication ID to 96c167aefd1a36c472d9c3d2ecace0af53ff9c2a, valid up to offset: 323. New replication ID is e09bddcfcbe3119b4ad56809687d0a0bd98fa686
+148520:M 20 Apr 2026 13:54:51.578 # Cluster state changed: ok
+148520:M 20 Apr 2026 13:55:20.998 * Replica 127.0.0.1:7000 asks for synchronization
+148520:M 20 Apr 2026 13:55:20.998 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '1656e0f27fc257622fc5a9ab0b7af8905312cef2', my replication IDs are 'e09bddcfcbe3119b4ad56809687d0a0bd98fa686' and '96c167aefd1a36c472d9c3d2ecace0af53ff9c2a')
+148520:M 20 Apr 2026 13:55:20.998 * Delay next BGSAVE for diskless SYNC
+148520:M 20 Apr 2026 13:55:21.027 * Clear FAIL state for node 6cfebc6a6b5e4a45c96627f2546e59aba9838d7c: master without slots is reachable again.
+148520:M 20 Apr 2026 13:55:25.275 * Starting BGSAVE for SYNC with target: replicas sockets
+148520:M 20 Apr 2026 13:55:25.276 * Background RDB transfer started by pid 150366
+150366:C 20 Apr 2026 13:55:25.278 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+148520:M 20 Apr 2026 13:55:25.278 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+148520:M 20 Apr 2026 13:55:25.287 * Background RDB transfer terminated with success
+148520:M 20 Apr 2026 13:55:25.287 * Streamed RDB transfer with replica 127.0.0.1:7000 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+148520:M 20 Apr 2026 13:55:25.287 * Synchronization with replica 127.0.0.1:7000 succeeded
+148520:M 20 Apr 2026 16:27:35.038 # Connection with replica 127.0.0.1:7000 lost.
+148520:M 20 Apr 2026 16:27:35.044 * Replica 127.0.0.1:7000 asks for synchronization
+148520:M 20 Apr 2026 16:27:35.044 * Partial resynchronization request from 127.0.0.1:7000 accepted. Sending 0 bytes of backlog starting from offset 13175.
+148520:M 20 Apr 2026 16:38:54.062 # Connection with replica 127.0.0.1:7000 lost.
+148520:M 20 Apr 2026 16:38:54.070 * Replica 127.0.0.1:7000 asks for synchronization
+148520:M 20 Apr 2026 16:38:54.070 * Partial resynchronization request from 127.0.0.1:7000 accepted. Sending 0 bytes of backlog starting from offset 13189.
+148520:M 21 Apr 2026 01:07:05.609 # Connection with replica 127.0.0.1:7000 lost.
+148520:M 21 Apr 2026 01:07:05.710 * Replica 127.0.0.1:7000 asks for synchronization
+148520:M 21 Apr 2026 01:07:05.710 * Partial resynchronization request from 127.0.0.1:7000 accepted. Sending 0 bytes of backlog starting from offset 34903.
+148520:M 21 Apr 2026 01:36:00.406 # Connection with replica 127.0.0.1:7000 lost.
+148520:M 21 Apr 2026 01:36:00.411 * Replica 127.0.0.1:7000 asks for synchronization
+148520:M 21 Apr 2026 01:36:00.412 * Partial resynchronization request from 127.0.0.1:7000 accepted. Sending 0 bytes of backlog starting from offset 35057.
+148520:M 21 Apr 2026 03:21:01.732 # Disconnecting timedout replica (streaming sync): 127.0.0.1:7000
+148520:M 21 Apr 2026 03:21:01.732 # Connection with replica 127.0.0.1:7000 lost.
+148520:M 21 Apr 2026 03:21:01.807 * Replica 127.0.0.1:7000 asks for synchronization
+148520:M 21 Apr 2026 03:21:01.809 * Partial resynchronization request from 127.0.0.1:7000 accepted. Sending 0 bytes of backlog starting from offset 35057.
+148520:M 21 Apr 2026 08:35:53.130 # Connection with replica 127.0.0.1:7000 lost.
+148520:M 21 Apr 2026 08:35:53.135 * Replica 127.0.0.1:7000 asks for synchronization
+148520:M 21 Apr 2026 08:35:53.136 * Partial resynchronization request from 127.0.0.1:7000 accepted. Sending 0 bytes of backlog starting from offset 35057.
+148520:M 21 Apr 2026 08:52:37.265 # Connection with replica 127.0.0.1:7000 lost.
+148520:M 21 Apr 2026 08:52:37.266 * Replica 127.0.0.1:7000 asks for synchronization
+148520:M 21 Apr 2026 08:52:37.266 * Partial resynchronization request from 127.0.0.1:7000 accepted. Sending 0 bytes of backlog starting from offset 35071.
+                                                                           

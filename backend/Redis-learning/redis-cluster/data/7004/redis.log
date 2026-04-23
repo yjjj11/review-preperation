@@ -1,0 +1,104 @@
+148514:C 20 Apr 2026 13:50:19.098 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+148514:C 20 Apr 2026 13:50:19.098 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=148514, just started
+148514:C 20 Apr 2026 13:50:19.098 # Configuration loaded
+148514:M 20 Apr 2026 13:50:19.099 * monotonic clock: POSIX clock_gettime
+148514:M 20 Apr 2026 13:50:19.100 * No cluster configuration found, I'm eb708d1b7b316bb70d711b7ed14977e23986c8ed
+148514:M 20 Apr 2026 13:50:19.102 * Running mode=cluster, port=7004.
+148514:M 20 Apr 2026 13:50:19.102 # Server initialized
+148514:M 20 Apr 2026 13:50:19.102 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+148514:M 20 Apr 2026 13:50:19.106 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+148514:M 20 Apr 2026 13:50:19.111 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+148514:M 20 Apr 2026 13:50:19.112 * Ready to accept connections
+148514:M 20 Apr 2026 13:50:55.166 # configEpoch set to 5 via CLUSTER SET-CONFIG-EPOCH
+148514:M 20 Apr 2026 13:50:55.256 # IP address for this node updated to 127.0.0.1
+148514:S 20 Apr 2026 13:50:58.172 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+148514:S 20 Apr 2026 13:50:58.172 * Connecting to MASTER 127.0.0.1:7002
+148514:S 20 Apr 2026 13:50:58.172 * MASTER <-> REPLICA sync started
+148514:S 20 Apr 2026 13:50:58.172 # Cluster state changed: ok
+148514:S 20 Apr 2026 13:50:58.173 * Non blocking connect for SYNC fired the event.
+148514:S 20 Apr 2026 13:50:58.173 * Master replied to PING, replication can continue...
+148514:S 20 Apr 2026 13:50:58.173 * Trying a partial resynchronization (request f52a214c4f8d30e29de9ecbdf0726347df37e078:1).
+148514:S 20 Apr 2026 13:51:03.542 * Full resync from master: e7c8f590ec614dd3bc5e046a1844a67eb9032895:14
+148514:S 20 Apr 2026 13:51:03.543 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+148514:S 20 Apr 2026 13:51:03.545 * Discarding previously cached master state.
+148514:S 20 Apr 2026 13:51:03.545 * MASTER <-> REPLICA sync: Flushing old data
+148514:S 20 Apr 2026 13:51:03.545 * MASTER <-> REPLICA sync: Loading DB in memory
+148514:S 20 Apr 2026 13:51:03.549 * Loading RDB produced by version 7.0.15
+148514:S 20 Apr 2026 13:51:03.549 * RDB age 0 seconds
+148514:S 20 Apr 2026 13:51:03.549 * RDB memory usage when created 1.79 Mb
+148514:S 20 Apr 2026 13:51:03.549 * Done loading RDB, keys loaded: 0, keys expired: 0.
+148514:S 20 Apr 2026 13:51:03.549 * MASTER <-> REPLICA sync: Finished with success
+148514:S 20 Apr 2026 13:51:03.549 * Creating AOF incr file temp-appendonly.aof.incr on background rewrite
+148514:S 20 Apr 2026 13:51:03.549 * Background append only file rewriting started by pid 149086
+149086:C 20 Apr 2026 13:51:03.551 * Successfully created the temporary AOF base file temp-rewriteaof-bg-149086.aof
+149086:C 20 Apr 2026 13:51:03.552 * Fork CoW for AOF rewrite: current 0 MB, peak 0 MB, average 0 MB
+148514:S 20 Apr 2026 13:51:03.635 * Background AOF rewrite terminated with success
+148514:S 20 Apr 2026 13:51:03.635 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-149086.aof into appendonly.aof.2.base.rdb
+148514:S 20 Apr 2026 13:51:03.635 * Successfully renamed the temporary AOF incr file temp-appendonly.aof.incr into appendonly.aof.2.incr.aof
+148514:S 20 Apr 2026 13:51:03.640 * Removing the history file appendonly.aof.1.incr.aof in the background
+148514:S 20 Apr 2026 13:51:03.640 * Removing the history file appendonly.aof.1.base.rdb in the background
+148514:S 20 Apr 2026 13:51:03.643 * Background AOF rewrite finished successfully
+148514:S 20 Apr 2026 13:54:50.869 * FAIL message received from e7918a5179bf0a862910ab05076e2a90343a91c9 about 6cfebc6a6b5e4a45c96627f2546e59aba9838d7c
+148514:S 20 Apr 2026 13:54:50.870 # Cluster state changed: fail
+148514:S 20 Apr 2026 13:54:51.580 # Cluster state changed: ok
+148514:S 20 Apr 2026 13:55:21.003 * Clear FAIL state for node 6cfebc6a6b5e4a45c96627f2546e59aba9838d7c: master without slots is reachable again.
+148514:S 20 Apr 2026 16:27:35.634 # MASTER timeout: no data nor PING received...
+148514:S 20 Apr 2026 16:27:35.636 # Connection with master lost.
+148514:S 20 Apr 2026 16:27:35.636 * Caching the disconnected master state.
+148514:S 20 Apr 2026 16:27:35.636 * Reconnecting to MASTER 127.0.0.1:7002
+148514:S 20 Apr 2026 16:27:35.637 * MASTER <-> REPLICA sync started
+148514:S 20 Apr 2026 16:27:35.637 * Non blocking connect for SYNC fired the event.
+148514:S 20 Apr 2026 16:27:35.639 * Master replied to PING, replication can continue...
+148514:S 20 Apr 2026 16:27:35.641 * Trying a partial resynchronization (request e7c8f590ec614dd3bc5e046a1844a67eb9032895:13231).
+148514:S 20 Apr 2026 16:27:35.641 * Successful partial resynchronization with master.
+148514:S 20 Apr 2026 16:27:35.641 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+148514:S 20 Apr 2026 16:38:53.538 # MASTER timeout: no data nor PING received...
+148514:S 20 Apr 2026 16:38:53.538 # Connection with master lost.
+148514:S 20 Apr 2026 16:38:53.539 * Caching the disconnected master state.
+148514:S 20 Apr 2026 16:38:53.539 * Reconnecting to MASTER 127.0.0.1:7002
+148514:S 20 Apr 2026 16:38:53.811 * MASTER <-> REPLICA sync started
+148514:S 20 Apr 2026 16:38:53.811 * Non blocking connect for SYNC fired the event.
+148514:S 20 Apr 2026 16:38:53.818 * Master replied to PING, replication can continue...
+148514:S 20 Apr 2026 16:38:53.830 * Trying a partial resynchronization (request e7c8f590ec614dd3bc5e046a1844a67eb9032895:13231).
+148514:S 20 Apr 2026 16:38:53.830 * Successful partial resynchronization with master.
+148514:S 20 Apr 2026 16:38:53.830 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+148514:S 21 Apr 2026 01:07:05.237 # Connection with master lost.
+148514:S 21 Apr 2026 01:07:05.238 * Caching the disconnected master state.
+148514:S 21 Apr 2026 01:07:05.239 * Reconnecting to MASTER 127.0.0.1:7002
+148514:S 21 Apr 2026 01:07:05.240 * MASTER <-> REPLICA sync started
+148514:S 21 Apr 2026 01:07:05.240 * Non blocking connect for SYNC fired the event.
+148514:S 21 Apr 2026 01:07:05.245 * Master replied to PING, replication can continue...
+148514:S 21 Apr 2026 01:07:05.438 * Trying a partial resynchronization (request e7c8f590ec614dd3bc5e046a1844a67eb9032895:34903).
+148514:S 21 Apr 2026 01:07:05.439 * Successful partial resynchronization with master.
+148514:S 21 Apr 2026 01:07:05.439 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+148514:S 21 Apr 2026 03:21:01.783 # MASTER timeout: no data nor PING received...
+148514:S 21 Apr 2026 03:21:01.861 # Connection with master lost.
+148514:S 21 Apr 2026 03:21:01.861 * Caching the disconnected master state.
+148514:S 21 Apr 2026 03:21:01.862 * Reconnecting to MASTER 127.0.0.1:7002
+148514:S 21 Apr 2026 03:21:01.881 * MASTER <-> REPLICA sync started
+148514:S 21 Apr 2026 03:21:01.881 * Non blocking connect for SYNC fired the event.
+148514:S 21 Apr 2026 03:21:01.900 * Master replied to PING, replication can continue...
+148514:S 21 Apr 2026 03:21:01.904 * Trying a partial resynchronization (request e7c8f590ec614dd3bc5e046a1844a67eb9032895:35057).
+148514:S 21 Apr 2026 03:21:01.905 * Successful partial resynchronization with master.
+148514:S 21 Apr 2026 03:21:01.905 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+148514:S 21 Apr 2026 08:35:52.373 # MASTER timeout: no data nor PING received...
+148514:S 21 Apr 2026 08:35:52.373 # Connection with master lost.
+148514:S 21 Apr 2026 08:35:52.373 * Caching the disconnected master state.
+148514:S 21 Apr 2026 08:35:52.373 * Reconnecting to MASTER 127.0.0.1:7002
+148514:S 21 Apr 2026 08:35:52.377 * MASTER <-> REPLICA sync started
+148514:S 21 Apr 2026 08:35:52.378 * Non blocking connect for SYNC fired the event.
+148514:S 21 Apr 2026 08:35:52.381 * Master replied to PING, replication can continue...
+148514:S 21 Apr 2026 08:35:52.408 * Trying a partial resynchronization (request e7c8f590ec614dd3bc5e046a1844a67eb9032895:35057).
+148514:S 21 Apr 2026 08:35:52.409 * Successful partial resynchronization with master.
+148514:S 21 Apr 2026 08:35:52.409 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+148514:S 21 Apr 2026 08:52:38.032 # MASTER timeout: no data nor PING received...
+148514:S 21 Apr 2026 08:52:38.032 # Connection with master lost.
+148514:S 21 Apr 2026 08:52:38.032 * Caching the disconnected master state.
+148514:S 21 Apr 2026 08:52:38.033 * Reconnecting to MASTER 127.0.0.1:7002
+148514:S 21 Apr 2026 08:52:38.033 * MASTER <-> REPLICA sync started
+148514:S 21 Apr 2026 08:52:38.033 * Non blocking connect for SYNC fired the event.
+148514:S 21 Apr 2026 08:52:38.033 * Master replied to PING, replication can continue...
+148514:S 21 Apr 2026 08:52:38.033 * Trying a partial resynchronization (request e7c8f590ec614dd3bc5e046a1844a67eb9032895:35071).
+148514:S 21 Apr 2026 08:52:38.034 * Successful partial resynchronization with master.
+148514:S 21 Apr 2026 08:52:38.034 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+                                                                           
