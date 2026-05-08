@@ -2,7 +2,6 @@
 - [mysql 面经](https://zhuanlan.zhihu.com/p/1950606418622288824)
 - [操作系统 面经](https://zhuanlan.zhihu.com/p/616080301)
 - [c++语法 面经](https://blog.csdn.net/songbijian/article/details/132507421)
-
 ---
 
 ## 计算机网络高频问答整理
