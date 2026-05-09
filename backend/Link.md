@@ -336,9 +336,9 @@ in 和 exists 主要用在子查询中，它们的执行逻辑不同，性能差
 
 两阶段提交是 MySQL 内部为了保证数据一致性而设计的一种分布式事务协调机制，它主要用来协调 InnoDB 的 redo log 和 Server 层的 binlog 这两个独立日志的写入。它把事务的提交分成了两个阶段：
 
-**准备阶段（Prepare）**：当 InnoDB 写完 redo log 后，它不直接提交事务，而是将 redo log 的状态设置为 "prepare"，此时 redo log 存在 redo log 环形缓冲区中。
+**准备阶段（Prepare）**：当 InnoDB 写完 redo log 后，它不直接提交事务，而是将 redo log 的状态设置为 "prepare"，此时 redo log 存在 redo log 环形缓冲区中，要把它刷到磁盘redolog file中。
 
-**提交阶段（Commit）**：之后，由执行器去写 binlog。当 binlog 成功写入磁盘后，执行器再通知 InnoDB，将 redo log 的状态从 "prepare" 改为 "commit" 然后刷盘，完成整个事务的提交。
+**提交阶段（Commit）**：之后，由执行器去写 binlog。当 binlog 成功写入磁盘后，执行器再通知 InnoDB，将 redo log 的状态从 "prepare" 改为 "commit" ，完成整个事务的提交。
 
 **为什么需要**：保证 redo log 和 binlog 两份日志的一致性。如果不做两阶段提交，先写哪个都会 crash 后不一致。
 
